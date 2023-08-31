@@ -1,5 +1,5 @@
 const generateBtn = document.getElementById('generateBtn');
-const resetBtn = document.getElementById('resetBtn'); // Get the reset button element
+const resetBtn = document.getElementById('resetBtn');
 const qrCodeContainer = document.getElementById('qrCodeContainer');
 const ticketNumberContainer = document.getElementById('ticketNumberContainer');
 
@@ -13,7 +13,7 @@ generateBtn.addEventListener('click', () => {
     // Save updated ticket number to localStorage
     localStorage.setItem('ticketNumber', currentTicketNumber.toString());
 
-    const qrCodeData = `https://queueify.github.io/tickets/${currentTicketNumber}`;
+    const qrCodeData = `https://queueify.github.io/queueify/tickets/${currentTicketNumber}`;
     
     // Clear existing content
     qrCodeContainer.innerHTML = '';
